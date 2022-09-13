@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: url(./img/bg-full.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      /* 半透明遮罩 + 背景混合模式相乘模式 */
+      background-color: rgba(0, 0, 0, .6);
+      background-blend-mode: multiply;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .container{
+      position: relative;
+      width: 80%;
+      height: 80%;
+      top: 10%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    
+    .main{
+      margin: 0;
+      padding: 0;
+      width: 50%;
+      height: 100%;
+      background: url(./img/main.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-x: center;
+      /* 半透明遮罩 + 背景混合模式相乘模式 */
+      background-color: rgba(0, 0, 0, .6);
+      background-blend-mode: multiply;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .cloud{
+      margin: 0;
+      padding: 0;
+      width: 50%;
+      height: 50%;
+      background: #aaaaaa;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      background-image: url(./img/cloud.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+    .tifa{
+      margin: 0;
+      padding: 0;
+      width: 50%;
+      height: 50%;
+      background: black;
+      background-image: url(./img/tifa.png);
+      background-size: contain;
+      background-repeat: no-repeat;    
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .main img{
+      width: 35%;
+    }
+
+    .cloud h1{
+      margin: 70px 0px 0px 20px;
+    }
+    .cloud p{ 
+      width: 57%;
+      word-wrap: break-word;
+      margin: 0px 0px 0px 20px;
+    }
+
+    .tifa h1 {
+      color: white;
+      margin: 70px 0px 0px -65px;
+      align-self: center;
+    }
+    .tifa p {
+      color: white;
+      width: 55%;
+      margin: 0px 0px 0px 200px;
+      align-self: center;
+    }
+
+    .main{
+      color: white;
+    }
+
+    .main p{
+      text-align: center;
+      width: 70%;
+
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="main">
+      <img src="./img/ps4-ff7.png">
+      <h1>Available Now</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum accusamus dignissimos velit repellendus sit facilis nesciunt. Illo repudiandae quaerat, qui ut voluptatum saepe doloremque nulla ipsum, modi ducimus quam rem!</p>
+    </div>
+    <div class="cloud">
+      <h1>Cloud</h1>
+      <p>Lorem ipsum dolor sit amet consecte adipisicing elit. Quasi, deserunt ipsum ullam quas praesentium blanditiis, tempora, eius aliquid nihil id excepturi.</p>
+    </div>
+    <div class="tifa">
+      <h1>Tifa</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ratione minus, dolore deserunt facere laborum voluptatibus corporis rerum iusto qui autem?</p>
+    
+    
+    </div>
+  </div>
+</body>
+</html>
